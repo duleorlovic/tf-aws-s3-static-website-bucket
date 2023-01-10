@@ -1,11 +1,11 @@
 module "bucket" {
-  # source = "../../"
-  source = "git@github.com:duleorlovic/tf_aws_s3_buckets.git"
+  source = "../../"
+  # source = "git@github.com:duleorlovic/tf_aws_s3_buckets.git"
   # when you use domain name, bucket_name must be the same as domain name
-  bucket_name = "my-site-2022-08-18"
+  bucket_name = "news.trk.in.rs"
   tags = {
     SourceUrl = "https://github.com/duleorlovic/tf_aws_s3_buckets"
-    TfstateUrl = "@air:terraform_modules/tf_aws_s3_buckets/examples/create_static_site/terraform.tfstate"
+    TfstateUrl = "@air:terraform_modules/tf_aws_s3_buckets/examples/s3_bucket_with_route53_domain/terraform.tfstate"
   }
 }
 

@@ -16,6 +16,7 @@ resource "aws_s3_bucket" "bucket" {
 #   acl    = "public-read"
 # }
 
+# on web this is Static website hosting
 resource "aws_s3_bucket_website_configuration" "bucket_configuration" {
   bucket = aws_s3_bucket.bucket.id
 
